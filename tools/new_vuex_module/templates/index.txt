@@ -1,0 +1,17 @@
+import { actions } from './actions';
+import { getters } from './getters';
+import { mutations } from './mutations';
+import { state } from './state'
+
+export const <MODULE_NAME> = {
+    firestorePath: "<FIRESTORE_PATH>",
+    firestoreRefType: "<FIRESTORE_REF_TYPE>",
+    moduleName: "<MODULE_NAME>",
+    statePropName: "data",
+    namespaced: true,
+
+    state: state,
+    actions: actions,
+    getters: getters,
+    mutations: mutations,
+};
